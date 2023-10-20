@@ -4,23 +4,64 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/9748fc3881.js" crossorigin="anonymous"></script>
         <title>Velocity</title>
     </head>
     <body>
         <header>
             <nav>
                 <span>
-                    <a href="index.html">Logo</a>
+                    <a id="logo" href="index.html">VELOCITY</a>
                 </span>
-                <ul>
+                <ul class="navigation-bar">
                     <li><a href="delivery-return.html">Services</a></li>
                     <li><a href="products.html">Products</a></li>
-                    <li><a href="index.html">Home</a></li>
+                    <input type="text" placeholder="Search...">
                 </ul>
             </nav>
         </header>
         <h1>VELOCITY</h1>
+        <hr>
         <main>
+            <section class="sale-cover">
+                <a href="products.html"><img src="css/img/sale-cover.jpeg" alt="Sale cover image"></a>
+                <h2> SALE </h2>
+                <hr>
+            </section>
+            <section class="categories">
+                <img src="css/img/male-runner.jpg">
+                <img src="css/img/female-runner.jpg">
+                <hr>
+            </section>
+            <section class="bestseller-men">
+                <h2>Bestsellers - Men</h2>
+                <img src="css/img/male-shoes1.jpg">
+                <img src="css/img/male-shoes1.jpg">
+                <img src="css/img/male-shoes1.jpg">
+                <hr>
+            </section>
+            <section class="bestseller-women">
+                <h2>Bestsellers - Women</h2>
+                <img src="css/img/female-shoes1.avif">
+                <img src="css/img/female-shoes1.avif">
+                <img src="css/img/female-shoes1.avif">
+                <hr>
+            </section>
+            <article class="news-letter">
+                <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                <form id="newsletter-registration" method="post" action="#" autocomplete="on">
+                    <span onclick="openClose('none')"></span>
+                    <h3>Sign up for our newsletter</h3>
+                    <label for="name">First name
+                        <input type="text" name="name" placeholder="Nora">
+                    </label>
+                    <label for="last-name">Last name
+                        <input type="text" name="last-name" placeholder="Nordmann">
+                    </label>
+                    <label for="email-registration">E-mail address</label>
+                    <input type="email" name="email-registration" id="email-registration" placeholder="nora@email.com">
+                </form>
+            </article>
         </main>
     </body>
 </html>
