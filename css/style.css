@@ -29,6 +29,7 @@ body{
 
 header{
   background-image: url(img/royal-blue.jpg);
+  /*royal blue source: https://stock.adobe.com/search?k=elegant+royal+blue+background&asset_id=512643436*/
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/royal-blue.jpg");
   background-size: cover;
   align-items: center;
