@@ -7,77 +7,110 @@
         <title>Velocity</title>
     </head>
     <body>
-        <div class="main-grid">
+        <div id="grid-container">
             <header>
-                <span>
+                <nav class="flex-section">
                     <a id="logo" href="index.html">VELOCITY</a>
-                </span>
-                <nav class="nav">
                     <ul>
-                        <li><a href="index.html"></a></li>
-                        <li><a href="products.html"></a></li>
-                        <li><a href="delivery-return.html"></a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="delivery-return.html">Delivery and Return</a></li>
                     </ul>
                 </nav>
             </header>
             <main>
                  <h1 class="title">VELOCITY</h1>
-                <p>Quality and Speed</p>
                 <section class="sale-cover">
-                    <a href="products.html"><img src="css/img/sale-cover.jpeg" alt="Sale cover image"></a>
-                    <h2> SALE </h2>
-                    <hr>
+                    <a href="products.html"><img class="images" src="css/img/sale-cover.jpeg" alt="Sale cover image"></a>
+                    <h2 class="title2"> SALE </h2>
                 </section>
-                <section class="categories">
-                    <img src="css/img/male-runner.jpg" alt="male runner">
-                    <img src="css/img/female-runner.jpg" alt="female runner">
+                <section class="flex-section">
+                    <img class="images" src="css/img/male-runner.jpg" alt="male runner">
+                    <img class="images" src="css/img/female-runner.jpg" alt="female runner">
                 </section>
-                <section class="bestseller-men">
+                <section class="flex-section">
                     <h2>Bestsellers - Men</h2>
-                    <a href="products.html"><img src="css/img/male-shoes1.jpg" alt="male runner shoes"></a>
-                    <a href="products.html"><img src="css/img/male-shoes1.jpg" alt="male runner shoes"></a>
-                    <a href="products.html"><img src="css/img/male-shoes1.jpg" alt="male runner shoes"></a>
+                    <a href="products.html"><img class="images" src="css/img/male-shoes1.jpg" alt="male runner shoes"></a>
+                    <a href="products.html"><img class="images" src="css/img/male-shoes1.jpg" alt="male runner shoes"></a>
+                    <a href="products.html"><img class="images" src="css/img/male-shoes1.jpg" alt="male runner shoes"></a>
                 </section>
-                <section class="bestseller-women">
+                <section class="flex-section">
                     <h2>Bestsellers - Women</h2>
-                    <a href="products.html"><img src="css/img/female-shoes1.avif" alt="female runner shoes"></a>
-                    <a href="products.html"><img src="css/img/female-shoes1.avif" alt="female runner shoes"></a>
-                    <a href="products.html"><img src="css/img/female-shoes1.avif" alt="female runner shoes"></a>
+                    <a href="products.html"><img class="images" src="css/img/female-shoes1.avif" alt="female runner shoes"></a>
+                    <a href="products.html"><img class="images" src="css/img/female-shoes1.avif" alt="female runner shoes"></a>
+                    <a href="products.html"><img class="images" src="css/img/female-shoes1.avif" alt="female runner shoes"></a>
                 </section>
             </main>
             <footer>
-                <article class="news-letter">
+                <article id="news-letter">
                     <h2>Want to receive the latest news on the best shoes?</h2>
-                    <form id="newsletter-registration" method="post" action="#" autocomplete="on">
+                    <form class="form-group"
+                    id="newsletter-registration" 
+                    method="post" 
+                    action="#" 
+                    autocomplete="on">
                         <span onclick="openClose('none')"></span>
                         <h3>Sign up for our newsletter</h3>
                         <label for="first-name">First name
-                            <input type="text" id="first-name" name="name" placeholder="Nora">
+                            <input 
+                            type="text" 
+                            id="first-name" 
+                            name="name" 
+                            placeholder="Nora">
                         </label>
                         <label for="last-name">Last name
-                            <input type="text" id="last-name" name="last-name" placeholder="Nordmann">
+                            <input 
+                            type="text" 
+                            id="last-name" 
+                            name="last-name" 
+                            placeholder="Nordmann">
                         </label>
                         <label for="email-registration">E-mail address</label>
-                        <input type="email" name="email-registration" id="email-registration" placeholder="nora@email.com">
-                        <label class="newsletter-interest">What are you interested in?</label>
-                        <label class="alternative-men">Running shoes for men.
-                            <input type="radio" value="Running shoes for men." id="alternative-men" name="newsletter-interest">
+                        <input 
+                        type="email" 
+                        name="email-registration" 
+                        id="email-registration" 
+                        placeholder="nora@email.com">
+                        <label 
+                        class="newsletter-interest">What are you interested in?</label>
+                        <label 
+                        class="alternative-men">Running shoes for men.
+                            <input 
+                            type="radio" 
+                            value="Running shoes for men." 
+                            id="alternative-men" 
+                            name="newsletter-interest">
                         </label> 
-                        <label class="alternative-women">Running shoes for women.
-                            <input type="radio" value="Running shoes for women." id="alternative-women" name="newsletter-interest">
+                        <label 
+                        class="alternative-women">Running shoes for women.
+                            <input 
+                            type="radio" 
+                            value="Running shoes for women." 
+                            id="alternative-women" 
+                            name="newsletter-interest">
                         </label>   
-                        <button class="button">Subscribe</button>                
+                        <button class="button">Subscribe</button>
+                        <hr>                
                     </form>
                 </article>
-                <nav>
-                    <ul>
-                        <li><a class="footer-links" href="products.html">Products</a>
-                        <li><a class="footer-links" href="delivery-return.html">Delivery & Return</a>
-                        <li><a class="footer-links" href="#">About</a>
-                        <li><a class="footer-links" href="#">Follow us</a>
-                       <button class="button" onclick="window.location.href='index.html';">Back to the top</button>
-                    </ul>
-                </nav>
+            <section id="bottom">
+                <h2 class="title2">Services</h2>
+            </section>
+                <article>
+                    <h3>Products</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </article>
+                <article>
+                    <h3>Delivery and Return</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </article>
+                <article>
+                    <h3>Follow us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </article>
+                <article>
+                    <button class="button" onclick="window.location.href='index.html';">Back to the top</button>
+                </article>
             </footer>
         </div>
 </html>
